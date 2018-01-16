@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="<?php echo H_COMMON ?>css/<?php echo $_C ?>.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo H_COMMON ?>css/common.css">
+		<script type="text/javascript" src="<?php echo H_COMMON ?>js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="<?php echo H_COMMON ?>js/jquery.SuperSlide.2.1.1.js" ></script>
+		<script type="text/javascript" src="<?php echo H_COMMON ?>js/banner.js" ></script>
+		<script type="text/javascript" src="<?php echo H_COMMON ?>js/index.js" ></script>
+	</head>
+	<body>
+		<div class="header">
+			
+			<div class="top_nav">
+				<div class="logo">
+					<a href="<?php echo INDEX ?>">
+						<img src="<?php echo $logo['logo'] ?>" alt="" />
+					</a>
+				</div>
+				<ul>
+
+				
+				<?php foreach($menu_list as $value){  ?>
+				
+					<li>
+						<a  href="<?php echo $value['urls']; ?>" <?php echo strtolower($value['controller']) == $_C?'class="on"':'' ?>><?php echo $value['menu'] ?></a>
+					</li>
+				<?php } ?>
+				
+				</ul>
+			</div>
+		</div>
+		

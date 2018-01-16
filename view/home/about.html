@@ -1,0 +1,59 @@
+		<div class="content">
+			<div class="banner">
+				<div class="bd">
+					<ul>
+						<?php foreach($banner as $key => $v) { ?>
+							<li>
+								<a href="<?php echo PORDUCTS ?>"><img src="<?php echo $v['image'] ?>" /></a>
+							</li>
+						<? } ?>
+
+					</ul>
+				</div>
+				<div class="hd">
+					<ul>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>	
+			</div>
+			<div class="content clear" id='jb'>
+				<div class="main">
+					<div class="about_sidebar">
+						<div class="sidebar">
+							<div class="title">
+								<h4>ABOUT US</h3>
+								<h5>关于我们</h4>
+							</div>
+							<ul>
+								<?php foreach($about as $value) { ?>
+									<li>
+										<a href="index.php?mot=home&ctl=about&cid=<?php echo $value['cate_id'] ?>#jb">
+											<span <?php echo $value['cate_id'] == $cid?'class="on"':'' ?> ><?php echo $value['cate_name'] ?></span>
+										</a>
+									</li>
+								<?php } ?>
+							</ul>
+						</div>
+						
+					</div>
+					<div class="about_list">
+						<div class="about_title">
+							<img src="<?php echo H_COMMON ?>img/news_list_title_bg.jpg" alt="" />
+							<h4><?php echo $about2['cate_name'] ?>/ </h3>
+
+							<h5>About us</h4>
+						</div>
+					</div>
+					<div class="text">
+						<img src="<?php echo $about1['image'] ?>" alt="" />
+
+
+
+							<p><?php echo $about1['content'] ?></p>
+
+					</div>
+				</div>
+			</div>
+		</div>

@@ -1,0 +1,81 @@
+
+		<div class="content">
+			<div class="banner">
+				<div class="bd">
+					<ul>
+						<?php foreach($banner as $key => $v) { ?>
+							<li>
+								<a href="<?php echo PORDUCTS ?>"><img src="<?php echo $v['image'] ?>" /></a>
+							</li>
+						<? } ?>
+					</ul>
+				</div>
+				<div class="hd">
+					<ul>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>	
+			</div>
+				<div class="main clear">
+					<div class="contach_sidebar">
+						<div class="sidebar">
+							<div class="title">
+								<h4>CONTACT US</h3>
+								<h5>联系我们</h4>
+							</div>
+							<p>Detailed address</p>
+							<p>And</p>
+							<p>Leaving a message</p>
+							<span>详细地址</span>
+							<b>给我们留言</b>
+						</div>
+						<div class="search_title">
+							<div class="title">
+								<h4>SEARACH</h3>
+								<h5>搜索</h4>
+							</div>
+							<form>
+								<input class="search" value="" />
+								<input class="btn" type="button" />
+							</form>
+						</div>
+					</div>
+					<div class="contach_list">
+						<div class="contach_title">
+							<img src="<?php echo H_COMMON ?>img/news_list_title_bg.jpg" alt="" />
+							<h4>联系我们/ </h3>
+							<h5>Contact us</h4>
+						</div>
+					</div>
+					<div class="map">
+						<iframe src="<?php echo MAP ?>map.html" width="960" height="446" 							frameborder="0" scrolling="no" ></iframe>	
+					</div>
+					<div class="msg">
+						<form name="msg" method="post" action="index.php?mot=home&ctl=contact&act=add"> 
+							<h5>给我留言</h5><br />
+	    					<label>姓&nbsp;&nbsp;&nbsp;名：</label><input type="text" name="name" /><br />
+	    					<label>手&nbsp;&nbsp;&nbsp;机：</label><input type="text" name="phone" /><br />
+	    					<label>邮&nbsp;&nbsp;&nbsp;箱：</label><input type="text" name="email" /><br />
+	    					<label>留&nbsp;&nbsp;&nbsp;言：</label><textarea name="content" ></textarea><br />
+	    					<label>验证码：</label><input type="text" />
+	    					<img src="<?php echo H_COMMON ?>img/contact_code.jpg" />
+	    					<input class="submit" type="submit" value="提交" />
+	    					<input class="reset" type="reset" />
+						</form>
+					<div class="tel">
+						<h5>联系方式</h5><br />
+						<p>公司地址： <?php echo $result['address']?></p>
+						<p>联&nbsp;&nbsp;系&nbsp;人：<?php echo $result['linkman']?></p>
+						<p>联系电话：<?php echo $result['phone']?></p>
+						<p>手 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 机：<?php echo $result['phone_number']?></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+<script>
+	
+</script>

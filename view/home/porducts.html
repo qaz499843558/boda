@@ -1,0 +1,67 @@
+		<div class="content">
+			<div class="banner">
+				<div class="bd">
+					<ul>
+						<?php foreach($banner as $key => $v) { ?>
+							<li>
+								<a href="###"><img src="<?php echo $v['image'] ?>" /></a>
+							</li>
+						<? } ?>
+					</ul>
+				</div>
+			</div>
+			<div class="content clear"  id='jb'>
+				<div class="main">
+					<div class="product_sidebar">
+						<div class="sidebar">
+							<div class="title">
+								<h4>PRODUCT CENTER</h3>
+								<h5>产品中心</h4>
+							</div>
+							<ul>
+
+								<?php foreach($por as $value) { ?>
+								<li>
+									<a href="index.php?mot=home&ctl=porducts&cid=<?php echo $value['cate_id']?>#jb">
+										<span <?php echo $value['cate_id'] == $cid?'class="on"':'' ?>><?php echo $value['cate_name']?></span>
+									</a>
+								</li>
+								<?php } ?>
+							</ul>
+						</div>
+						<div class="search_title">
+							<div class="title">
+								<h4>SEARACH</h3>
+								<h5>搜索</h4>
+							</div>
+							<form>
+								<input class="search" value="" />
+								<input class="btn" type="button" />
+							</form>
+						</div>
+					</div>
+					<div class="product_list">
+						<div class="product_title">
+							<img src="<?php echo H_COMMON ?>img/news_list_title_bg.jpg" alt="" />
+							<h4>产品中心/ </h3>
+							<h5>Product center</h4>
+						</div>
+					</div>
+					<div class="list">
+						<ul>
+							<?php foreach($por_list as $value) { ?>
+							<li>
+								<a href="index.php?mot=home&ctl=por_details&pid=<?php echo $value['id'] ?>">
+									<img src="<?php echo $value['image'] ?>" alt="" />
+									<p><?php echo $value['por_name'] ?></p>
+								</a>
+							</li>
+							<?php } ?>
+						</ul>
+					<ol class="page">
+                        <?php echo $page ?>
+					</ol>
+					</div>
+				</div>
+			</div>
+		</div>

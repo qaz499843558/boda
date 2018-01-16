@@ -1,0 +1,53 @@
+		<div class="content">
+			<div class="banner">
+				<div class="bd">
+					<ul>
+						<?php foreach($banner as $key => $v) { ?>
+							<li>
+								<a href="###"><img src="<?php echo $v['image'] ?>" /></a>
+							</li>
+						<?php } ?>
+					</ul>
+				</div>
+			</div>
+			<div class="content clear">
+				<div class="main">
+					<div class="news_sidebar">
+						<div class="sidebar">
+							<div class="title">
+								<h4>NEWS CENTER</h3>
+								<h5>新闻中心</h4>
+							</div>
+							<ul>
+							<?php foreach($news as $value) { ?>
+								<li>
+									<a href="index.php?mot=home&ctl=news&cid=<?php echo $value['cate_id'] ?>#jb">
+										<span <?php echo $value['cate_id'] == $cid?'class="on"':'' ?> ><?php echo $value['cate_name'] ?></span>
+									</a>
+								</li>
+							<?php } ?>
+							</ul>
+						</div>
+						
+					</div>
+					<div class="news_list">
+						<div class="news_title">
+							<img src="<?php echo H_COMMON ?>img/news_list_title_bg.jpg" alt="" />
+							<h4>新闻详情</h3>
+							<h5>News details</h4>
+						</div>
+					</div>
+					<div class="text">
+
+							
+							<h3><?php echo $news1['title'] ?></h3>
+							<span>编辑：<?php echo $news1['author'] ?> 发布时间：<?php echo $news1['create_time'] ?></span>
+							<b> 阅读：<?php echo $num ?></b>
+							<p><?php echo $news1['content'] ?></p>
+							<img src="<?php echo $news1['image'] ?>" alt="" />
+							<i><?php echo $news1['image_name'] ?></i>
+
+					</div>
+				</div>
+			</div>
+		</div>

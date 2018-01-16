@@ -1,0 +1,81 @@
+
+		<div class="content clear">
+			<div class="banner">
+				<div class="bd">
+					<ul>
+						<?php foreach($banner as $key => $v) { ?>
+							<li>
+								<a href="<?php echo PORDUCTS ?>"><img src="<?php echo $v['image'] ?>" /></a>
+							</li>
+						<? } ?>
+					</ul>
+				</div>
+				<!-- <div class="hd">
+					<ul>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>	 -->
+			</div>
+			<div class="main"  id='jb'>
+				<div class="news_sidebar">
+					<div class="sidebar">
+						<div class="title">
+							<h4>NEWS CENTER</h3>
+							<h5>新闻中心</h4>
+						</div>
+						<ul>
+							
+							<?php foreach($news as $value) { ?>
+								<li>
+									<a href="index.php?mot=home&ctl=news&cid=<?php echo $value['cate_id'] ?>#jb">
+										<span <?php echo $value['cate_id'] == $cid?'class="on"':'' ?>><?php echo $value['cate_name'] ?></span>
+									</a>
+								</li>
+							<?php } ?>
+
+						</ul>
+					</div>
+					<div class="search_title">
+						<div class="title">
+							<h4>SEARACH</h3>
+							<h5>搜索</h4>
+						</div>
+						<form>
+							<input class="search" value="" />
+							<input class="btn" type="button" />
+						</form>
+					</div>
+				</div>
+				<div class="news_list" id="jb">
+					<div class="news_title">
+						<img src="<?php echo H_COMMON ?>img/news_list_title_bg.jpg" alt="" />
+						<h4>新闻中心/ </h3>
+						<h5>News center</h4>
+					</div>
+				</div>
+				<div class="list">
+					<ul>
+					<?php foreach($news_list as $value){ ?>
+						<li>
+							<a href="index.php?mot=home&ctl=news_details&pid=<?php echo $value['id'] ?>">
+								<img src="<?php echo $value['image'] ?>" style="width: 200px; height:120px;" alt="" />
+							</a>
+							<div class="text">
+								<h3>
+									<a href="index.php?mot=home&ctl=news_details&pid=<?php echo $value['id'] ?>&cid=<?php echo $value['category_id'] ?>"><?php echo $value['title'] ?></a>
+								</h3>
+								<p><?php echo mb_substr($value['content'],0,150,'utf-8')."..." ?></p>
+								<span><?php echo $value['create_time'] ?></span>
+							</div>
+						</li>
+					<?php } ?>	
+					</ul>
+
+					<ol class="page">
+                        <?php echo $page ?>
+					</ol>
+				</div>
+			</div>
+		</div>

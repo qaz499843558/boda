@@ -1,0 +1,307 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+}
+a{ 
+	text-decoration: none;
+}
+ul{ 
+	list-style-type: none;
+}
+/*.product{
+	background: url(../img/current.png) no-repeat top;
+}*/
+
+.banner{ 
+		width: 100%; 
+        height: 600px; 
+        position: relative; 
+        overflow: hidden;
+        margin-bottom: 60px;
+}
+.banner .bd{ 
+			width: 1920px; 
+			height: 600px; 
+			position: absolute; 
+			left: 50%; 
+			margin-left: -960px;
+}
+.banner .bd li{ 
+				width: 1920px; 
+				height: 600px;
+}
+.banner .bd li a{ 
+				width: 1920px; 
+				height: 600px; 
+				display: block;
+}
+.banner .bd li a img{  
+					width: 1920px; 
+					height: 600px;
+}
+
+
+.content{
+	width: 100%;
+	height: auto;
+}
+.content .main{
+	width: 1200px;
+	height: auto;
+	margin: 0px auto;
+	background: #FFFFFF;
+}
+.product_sidebar{
+	width: 200px;
+	float: left;
+}
+.sidebar{
+	width: 200px;
+	border: 1px solid #1dcf85;
+	margin-right: 38px;
+	margin-bottom: 49px;
+	text-align: center;
+}
+.sidebar .title{
+	width: 200px;
+	height: 73px;
+	background: #1dcf85;
+	padding-top: 36px;
+	padding-bottom: 18px;
+}
+.sidebar .title h4{
+	font-family: arial;
+	font-size: 20px;
+	color: #fcffff;
+}
+.sidebar .title h5{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #fcffff;
+}
+.sidebar ul li{
+	width: 172px;
+	height: 28px;
+	margin: 0px auto;
+	margin-top: 18px;
+	margin-bottom: 9px;
+}
+.sidebar ul li a{
+	display: block;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	height: 28px;
+	line-height: 28px;
+	color: #656565;
+}
+.sidebar ul li a .on{
+	background: url(../img/sidebar_bg.png) no-repeat;
+	color: #FFFFFF;
+}
+.sidebar ul li a:hover{
+	background: url(../img/sidebar_bg.png) no-repeat;
+	color: #FFFFFF
+}
+.sidebar ul li a span{
+	display: block;
+	
+}
+
+.search_title{
+	width: 200px;
+
+	border: 1px solid #1dcf85;
+	margin-right: 38pxs;
+	margin-bottom: 49px;
+	text-align: center;
+}
+.search_title .title{
+	width: 200px;
+	height: 73px;
+	background: #1dcf85;
+	padding-top: 36px;
+}
+.search_title .title h4{
+	font-family: arial;
+	font-size: 20px;
+	color: #fcffff;
+}
+.search_title .title h5{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #fcffff;
+}
+.search_title form{
+	position: relative;
+}
+.search_title form .search{
+	width: 136px;
+	height: 36px;
+	border: 1px solid #c4c4c4;
+	margin-top: 9px;
+	margin-bottom: 9px;
+	padding:0 30px 0 5px ;
+	line-height: 36px;
+}
+.search_title form .btn{
+	width: 24px;
+	height: 36px;
+	background: url(../img/search_bg.png) no-repeat;
+	border: 0px;
+	float: right;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	cursor: pointer;
+}
+
+
+.product_list{
+	float: right;
+	margin-bottom: 18px;
+}
+.product_title{
+	width: 960px;
+	height: 34px;
+	float: left;
+	border-bottom: 1px dotted #d2d2d2;
+}
+.product_title img{
+	display: inline;
+}
+.product_title h4{
+	display: inline;
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+.product_title h5{
+	display: inline;
+	font-family: arial;
+	font-size: 14px;
+}
+
+
+.list{
+	width: 960px;
+	overflow: hidden;
+	float: right;
+	margin-bottom: 70px;
+}
+.list ul{
+	width: 1032px;
+	float: left;
+}
+.list ul li{
+	width: 222px;
+	height: 222px;
+	float: left;
+	margin-top: 8px;
+	margin-bottom: 22px;
+	position: relative;
+	margin-right: 24px;
+}
+
+.list ul li a p{
+	width: 222px;
+	height: 43px;
+	background:#d8d8d8;
+	position: absolute;
+	bottom: 0;
+	display: block;
+	line-height: 43px;
+	text-align: center;
+	color: #797979;
+}
+
+.list ul li:hover a p{
+	color: #FFFFFF;
+	background:#1dcf85;
+}
+
+.list ul li a img{
+	width: 222px;
+	height: 222px;
+	
+}
+
+
+
+
+
+.list .page{
+	height: 28px;
+	margin-top: 50px;
+	text-align: center;
+	margin-left: 290px;
+}
+
+.list .page li{
+	float: left;
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background: #e6e2e2;
+	line-height: 28px;
+	font-size: 12px;
+	margin: 0 5px 0 0px;
+}
+.list .page .on{
+	background: #1dcf85;
+}
+.list .page .on a{
+	color: #FFFFFF;
+}
+.list .page li:hover{
+	background: #1dcf85;
+}
+.list .page .prev{
+	width: 73px;
+	height: 28px;
+}
+.list .page .next{
+	width: 73px;
+	height: 28px;
+}
+.list .page .index{
+	width: 73px;
+	height: 28px;
+}
+.list .page .ddk{
+	width: 73px;
+	height: 28px;
+}
+.list .page li{
+	line-height: 28px;
+}
+.list .page li a{
+	display: block;
+	width: 28px;
+	height: 28px;
+	color: #666666;
+}
+.list .page li a:hover{
+	color: #FFFFFF;
+}
+.list .page .prev a{
+	display: block;
+	width: 73px;
+	height: 28px;
+}
+.list .page .next a{
+	display: block;
+	width: 73px;
+	height: 28px;
+}
+.list .page .index a{
+	display: block;
+	width: 73px;
+	height: 28px;
+}
+
+.list .page .ddk a{
+	display: block;
+	width: 73px;
+	height: 28px;
+}
+

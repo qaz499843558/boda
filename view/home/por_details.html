@@ -1,0 +1,149 @@
+
+		<div class="content">
+			<div class="banner">
+				<div class="bd">
+					<ul>
+						<?php foreach($banner as $key => $v) { ?>
+							<li>
+								<a href="###"><img src="<?php echo $v['image'] ?>" /></a>
+							</li>
+						<? } ?>
+					</ul>
+				</div>
+			</div>
+			<div class="content clear">
+				<div class="main">
+					<div class="por_sidebar">
+						<div class="sidebar">
+							<div class="title">
+								<h4>PRODUCT CENTER</h3>
+								<h5>产品中心</h4>
+							</div>
+							<ul>
+								<?php foreach($por as $value) { ?>
+								<li>
+									<a href="index.php?mot=home&ctl=porducts&cid=<?php echo $value['cate_id']?>#jb">
+										<span <?php echo $value['cate_id'] == $cid?'class="on"':'' ?>><?php echo $value['cate_name']?></span>
+									</a>
+								</li>
+								<?php } ?>
+							</ul>
+						</div>
+						<div class="search_title">
+							<div class="title">
+								<h4>SEARACH</h3>
+								<h5>搜索</h4>
+							</div>
+							<form>
+								<input class="search" value="" />
+								<input class="btn" type="button" />
+							</form>
+						</div>
+					</div>
+					<div class="por_list">
+						<div class="por_title">
+							<img src="<?php echo H_COMMON ?>img/news_list_title_bg.jpg" alt="" />
+							<h4>产品详情/ </h3>
+							<h5>Product details</h4>
+						</div>
+					</div>
+					<div class="text">
+						<img src="<?php echo H_COMMON ?>img/pro_details.jpg" alt="" />
+						<div>
+							<span><?php echo $por1['por_name']?></span>
+							<p><?php echo $por1['details']?></p>
+						</div>
+						<?php foreach($por1 as $value) { ?>
+						<p><?php echo $value['content']?></p>
+						<?php } ?>
+					</div>
+					<div class="pro_bottom_title">
+						<img src="<?php echo H_COMMON ?>img/news_list_title_bg.jpg" alt="" />
+						<h4>产品推荐/ </h3>
+						<h5>Product recommendations</h4>
+					</div>
+					<div class="picScroll">
+						<div class="bd">
+							<ul>
+							<li>
+								<a href="<?php echo POR_DETAILS ?>">
+									<img src="<?php echo H_COMMON ?>img/pro_details01.jpg" />
+									<span>ASF-01-886</span>
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo POR_DETAILS ?>">
+									<img src="<?php echo H_COMMON ?>img/pro_details02.jpg" />
+									<span>ASF-01-666</span>
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo POR_DETAILS ?>">
+									<img src="<?php echo H_COMMON ?>img/pro_details03.jpg" />
+									<span>ASF-01-899</span>
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo POR_DETAILS ?>">
+									<img src="<?php echo H_COMMON ?>img/pro_details04.jpg" />
+									<span>ASF-01-133</span>
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo POR_DETAILS ?>">
+									<img src="<?php echo H_COMMON ?>img/pro_details01.jpg" />
+									<span>ASF-01-886</span>
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo POR_DETAILS ?>">
+									<img src="<?php echo H_COMMON ?>img/pro_details02.jpg" />
+									<span>ASF-01-666</span>
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo POR_DETAILS ?>">
+									<img src="<?php echo H_COMMON ?>img/pro_details03.jpg" />
+									<span>ASF-01-899</span>
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo POR_DETAILS ?>">
+									<img src="<?php echo H_COMMON ?>img/pro_details04.jpg" />
+									<span>ASF-01-133</span>
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo POR_DETAILS ?>">
+									<img src="<?php echo H_COMMON ?>img/pro_details01.jpg" />
+									<span>ASF-01-886</span>
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo POR_DETAILS ?>">
+									<img src="<?php echo H_COMMON ?>img/pro_details02.jpg" />
+									<span>ASF-01-666</span>
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo POR_DETAILS ?>">
+									<img src="<?php echo H_COMMON ?>img/pro_details03.jpg" />
+									<span>ASF-01-899</span>
+								</a>
+							</li>
+							<li>
+								<a href="<?php echo POR_DETAILS ?>">
+									<img src="<?php echo H_COMMON ?>img/pro_details04.jpg" />
+									<span>ASF-01-133</span>
+								</a>
+							</li>
+						</ul>
+						</div>
+						<div class="hd">
+							<a class="prev" href="javascript:void(0)"></a>
+							<a class="next" href="javascript:void(0)"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>

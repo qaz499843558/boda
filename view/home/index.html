@@ -1,0 +1,96 @@
+       <div class="content">
+			<div class="banner">
+				<div class="bd">
+					<ul>
+						<?php foreach($banner as $key => $v) { ?>
+							<li>
+								<a href="<?php echo PORDUCTS ?>"><img src="<?php echo $v['image'] ?>" /></a>
+							</li>
+						<? } ?>
+					</ul>
+				</div>
+				<div class="hd">
+					<ul>
+						<li class="on"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>	
+			</div>
+			<div class="main">
+				<div class="about clear">
+					<div class="title">
+						<span>关于我们</span>
+						<p>About us</p>
+					</div>
+					<div class="notice">
+						<div class="hd">
+							<ul class="tab-nav">
+								<?php foreach($about1 as $key => $value ) { ?>
+
+									<li class="on">
+										<a target="_blank"><?php echo $value['cate_name']?></a>
+									</li>
+								<?php } ?>
+								<a href="<?php echo ABOUT ?>"><img src="<?php echo $about2[0]['image']?>" style="width: 400px; height: 304px;" alt="" /></a>
+							</ul>
+							
+							<div class="tab-bd">
+							<?php foreach($about2 as $key => $value ) { ?>
+								<div class="tab-pal">
+									<p><?php echo mb_substr($value['content'],0,150,'utf-8') ?>……</p>
+								</div>
+							<?php } ?>
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+				<div class="Products">
+					<div class="title">
+						<span>产品中心<p>Products</p></span>
+					</div>
+					<div class="products_bottom">
+						<ul>
+							<?php foreach($por as $value) { ?>
+								<li>
+									<a href="<?php echo POR_DETAILS ?>">
+										<img src="<?php echo $value['image'] ?>" style="width:278px; height: 225px;" alt="" />
+										<span></span>
+										<p><?php echo $value['por_name']?></p>
+									</a>
+								</li>
+							<?php } ?>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="news">
+					<div class="title">
+						<span>新闻中心<p>News center</p></span>
+					</div>
+					<div class="news_bottom">
+						<div class="left">
+							<a href="<?php echo NEWS_DETAILS ?>"><img src="<?php echo $news_list[0]['image']?>" style="width:378px; height: 378px;" alt="" /></a>
+						</div>
+						<div class="right">
+							<div class="time">
+								<span>12<p>2017.03</p></span>
+							</div>
+							<div class="text">
+								<h4><a href="<?php echo NEWS_DETAILS ?>"><?php  echo $news_list[0]['title'] ?></a></h4>
+								<p><?php echo $news_list[0]['content'] ?>......</p>
+							</div>
+							<ul>
+								<?php foreach($news_list as $value) { ?>
+									<li><a href="<?php echo NEWS_DETAILS ?>">· <?php echo $value['title'] ?></a>
+									<b><?php echo $value['create_time'] ?></b></li>
+								<?php } ?>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
